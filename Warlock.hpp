@@ -10,7 +10,8 @@ class Warlock
 		const std::string&		getName(void) const;
 		const std::string&		getTitle(void) const;
 		void					setTitle(std::string const & title);
-		Warlock(std::string & name, std::string title);
+		Warlock(std::string & name, std::string & title);
+		void	introduce() const;
 		virtual	~Warlock();
 
 	private :

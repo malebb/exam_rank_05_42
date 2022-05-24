@@ -1,12 +1,8 @@
 #include "Warlock.hpp"
 
-Warlock::Warlock() : name(), title()
-{
-
-}
-
 Warlock::Warlock(Warlock const & src) : name(src.name), title(src.title)
 {
+	std::cout << this->name << ": This looks like another boring day" << std::endl;
 }
 
 Warlock&		Warlock::operator=(Warlock const & rhs)
@@ -35,3 +31,14 @@ void					Warlock::setTitle(std::string const & title)
 {
 	this->title = title;
 }
+
+Warlock::Warlock(std::string & name, std::string & title) : name(name), title(title)
+{
+	std::cout << this->name << ": This looks like another boring day" << std::endl;
+}
+
+void	Warlock::introduce(void) const
+{
+	std::cout << this->name << ": I am " << this->name << ", " << this->title << "!" << std::endl;
+}
+
