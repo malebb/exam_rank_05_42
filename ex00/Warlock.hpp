@@ -1,3 +1,6 @@
+#ifndef WARLOCK_HPP
+#define WARLOCK_HPP
+
 #include <string>
 #include <iostream>
 
@@ -18,3 +21,5 @@ class Warlock
 		std::string		name;
 		std::string		title;
 };
+
+#endif
