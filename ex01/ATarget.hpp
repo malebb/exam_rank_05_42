@@ -6,6 +6,8 @@
 
 #include "ASpell.hpp"
 
+class ASpell;
+
 class ATarget
 {
 	public :
@@ -18,7 +20,7 @@ class ATarget
 		std::string const &		getType(void) const;
 		void					setType(std::string type);
 		void					getHitBySpell(ASpell const & spell) const;
-		ATarget					*clone(void);
+		ATarget					*clone(void) const;
 
 	protected :
 

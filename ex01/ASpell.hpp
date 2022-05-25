@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include "ATarget.hpp"
+
 class ATarget;
 
 class ASpell
